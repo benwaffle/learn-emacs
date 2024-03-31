@@ -1,11 +1,12 @@
 (setq inhibit-startup-message t)
 
+;; -1 = disable, 1 = enable ?
 (scroll-bar-mode 1)
-(tooltip-mode -1)
-(tool-bar-mode 1) ;; -1 = disable, 1 = enable ?
+(tooltip-mode 1)
+(tool-bar-mode 1)
 (set-fringe-mode 10)
 
-(menu-bar-mode -1)
+(menu-bar-mode 1)
 
 (setq visible-bell t)
 
