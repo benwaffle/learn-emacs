@@ -2,7 +2,7 @@
 
 (scroll-bar-mode 1)
 (tooltip-mode -1)
-(tool-bar-mode -1) ;; -1 = disable, 1 = enable ?
+(tool-bar-mode 1) ;; -1 = disable, 1 = enable ?
 (set-fringe-mode 10)
 
 (menu-bar-mode -1)
