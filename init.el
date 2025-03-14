@@ -12,7 +12,7 @@
 
 (set-face-attribute 'default nil :font "Operator Mono Book" :height 140)
 
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(keymap-global-set "<escape>" 'keyboard-escape-quit)
 
 ;; packages
 (require 'package)
@@ -53,6 +53,9 @@
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 
+;; icon font
+(use-package all-the-icons)
+
 ;; modeline
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
@@ -66,7 +69,7 @@
 (use-package which-key
   :init (which-key-mode)
   :diminish which-key-mode
-  :config (setq which-key-idle-delay 0))
+  :config (setq which-key-idle-delay 0.1))
 
 ;; add details to vertico menus
 (use-package marginalia
@@ -96,3 +99,8 @@
   (doom-themes-treemacs-config)
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
+
+(use-package general)
+;(general-define-key
+; "M-x" 'amx
+ ;"C-s" 
